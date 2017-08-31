@@ -1,5 +1,5 @@
 {
-    "name": "FireTV Serevr (latest)",
+    "name": "FireTV Server (latest)",
     "version": "0.0.3",
     "slug": "firetv",
     "description": "FireTV Server as build from master",
