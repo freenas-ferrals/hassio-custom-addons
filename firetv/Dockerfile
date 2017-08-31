@@ -1,18 +1,9 @@
 FROM %%BASE_IMAGE%%
 
-RUN apt-get update && apt-get install -y \
-        libssl-dev \
-        libusb-1.0-0 \
-        python-dev \
-        swig \
-        curl \
-        unzip \
-        && curl -L -o /tmp/master.zip https://github.com/happyleavesaoc/python-firetv/archive/master.zip \
+RUN apk add --no-cache swig libressl-dev python-dev libusb py-yaml py-flask py-pip build-base unzip curl
+RUN curl -L -o /tmp/master.zip https://github.com/happyleavesaoc/python-firetv/archive/master.zip \
         && cd /tmp \
-        && unzip master.zip \
-        && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+        && unzip master.zip
 
 RUN pip --no-cache-dir install --upgrade pip
 RUN pip --no-cache-dir install flask
