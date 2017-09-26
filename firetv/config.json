@@ -1,6 +1,6 @@
 {
     "name": "FireTV Server (latest)",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "slug": "firetv",
     "description": "FireTV Server as build from master",
     "url": "https://github.com/mpneuried/hassio-custom-addons",
