@@ -4,6 +4,7 @@
     "slug": "firetv",
     "description": "FireTV Server as build from master",
     "url": "https://github.com/mpneuried/hassio-custom-addons",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "services",
     "boot": "auto",
     "ports": {
